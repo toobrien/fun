@@ -65,7 +65,7 @@ func next(w http.ResponseWriter, r *http.Request) {
 func main() {
 
 	http.HandleFunc("/", index)
-	http.HandleFunc("/next_", next)
+	http.HandleFunc("/next", next)
 	log.Fatal(http.ListenAndServe(":8080", nil))
 
 }
